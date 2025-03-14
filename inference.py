@@ -1,7 +1,7 @@
 import torchaudio
 from generator import load_csm_1b
 
-generator = load_csm_1b(device="mps")
+generator = load_csm_1b(device="cuda")
 
 audio = generator.generate(
     text="Hello from Sesame.",
